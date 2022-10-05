@@ -33,7 +33,7 @@ function InstructionCard() {
 
     return (
 
-        <Grid item xs={12} md={5}>
+        <Grid item xs={12} md={7}>
             <Card sx={{
                 height: 425, width: "100%", overflow: 'auto'
             }}>
@@ -50,6 +50,7 @@ function InstructionCard() {
                                     <TableCell>Label</TableCell>
                                     <TableCell align="right">x-position</TableCell>
                                     <TableCell align="right">y-position</TableCell>
+                                    <TableCell align="right">Visibility</TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
@@ -72,6 +73,9 @@ function InstructionCard() {
                                         </TableCell>
                                         <TableCell align="right"><Typography color={label === currentLabel ? 'secondary' : 'primary'} sx={{ fontWeight: label === currentLabel ? 'bold' : '400' }}>{data[label].x}</Typography></TableCell>
                                         <TableCell align="right"><Typography color={label === currentLabel ? 'secondary' : 'primary'} sx={{ fontWeight: label === currentLabel ? 'bold' : '400' }}>{data[label].y}</Typography></TableCell>
+                                        <TableCell alignt="right">
+                                            <Typography color={label === currentLabel ? 'secondary' : 'primary'} sx={{fontWeight: label === currentLabel ? 'bold' : '400'}}>{data[label]['visible'] ? "Visible" : "Not Visible"}</Typography>
+                                        </TableCell>
                                     </TableRow>
                                 ))}
                             </TableBody>

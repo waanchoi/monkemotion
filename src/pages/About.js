@@ -17,7 +17,33 @@ function About() {
             </Box>
 
             <Box mt={10}>
-                <MainContent img={"https://media.istockphoto.com/photos/male-chimpanzee-in-business-clothes-picture-id184941527?k=20&m=184941527&s=612x612&w=0&h=ETZiNiSQG18Bn5oUI7Wzcj4Tk-4hCTtWTQBEDXEzvCs="} title={"Have any questions?"} content={"Any questions or concerns may be submitted through the link here."} subtitle={"Feel free to ask any questions."} />
+                <Box>
+                    <Grid container
+                    direction = {"row"}
+                    justifyContent={"space_between"} columnSpacing={10} rowSpacing={5}>
+
+                        <Grid item xs={12} md={6}>
+                            <Card sx={{height:200,width:"100%"}}>
+                                <div style={{justifyContent: 'center', textAlign:'center', alignItems:'center', height:200, width:'100%', display:'flex'}}>
+                                    <Typography variant='h3'>THE PRIMATE PORTAL</Typography>
+                                </div>
+                            </Card>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            <Card sx={{height:200,width:"100%",}}>
+                                <CardContent>
+                                    <Typography variant='h4'>What is The Primate Portal</Typography>
+                                    <Typography variant='subtitle2' paddingBottom={"15px"} color={"#a1a1a1"}>The Primate Portal is a collaborative project by a group of scientists studying the origins and nature of thought.</Typography>
+                                    <Typography variant='body1'>
+                                        Link to site: <a style={{cursor:'pointer'}} href="https://www.theprimateportal.org/" target="_blank">https://www.theprimateportal.org/</a>
+                                    </Typography>
+                                </CardContent>
+
+                            </Card>
+                        </Grid>
+
+                    </Grid>
+                </Box>
             </Box>
 
         </Box>

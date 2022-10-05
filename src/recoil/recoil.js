@@ -33,14 +33,12 @@ export const currentYRecoil = atom({
 export const dataRecoil = atom({
     key: 'dataRecoil', // unique ID (with respect to other atoms/selectors)
     default: {
-        "Left Eye": { x: "0", y: "0" },
-        "Right Eye": { x: "0", y: "0" },
-        "Center Nose": { x: "0", y: "0" },
-        "Left Ear": { x: "0", y: "0" },
-        "Right Ear": { x: "0", y: "0" },
-        "Mouth": { x: "0", y: "0" }
-
-
+        "Left Eye": { x: "0", y: "0", visible: true },
+        "Right Eye": { x: "0", y: "0", visible: true },
+        "Center Nose": { x: "0", y: "0", visible: true },
+        "Left Ear": { x: "0", y: "0", visible: true },
+        "Right Ear": { x: "0", y: "0", visible: true },
+        "Mouth": { x: "0", y: "0", visible: true }
     }, // default value (aka initial value)
 });
 

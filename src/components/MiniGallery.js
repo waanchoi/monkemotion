@@ -17,7 +17,7 @@ export default function MiniGallery() {
 
                 }} />
                 <Box width={"100%"}>
-                    <MultiCarousel autoPlaySpeed={1200} rtl={false} />
+                    <MultiCarousel autoPlaySpeed={1200} rtl={false} row={0} />
                 </Box>
 
                 <Box>
@@ -34,10 +34,10 @@ export default function MiniGallery() {
 
             </Box>
             <Box mt={5}>
-                <MultiCarousel autoPlaySpeed={1000} rtl={true} />
+                <MultiCarousel autoPlaySpeed={1000} rtl={true} row = {1} />
             </Box>
             <Box mt={5}>
-                <MultiCarousel autoPlaySpeed={1100} rtl={false} />
+                <MultiCarousel autoPlaySpeed={1100} rtl={false} row={2} />
             </Box>
         </>
     );

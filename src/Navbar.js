@@ -16,8 +16,8 @@ import ListItemText from '@mui/material/ListItemText';
 import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
-const navItems = ['Home', 'Contribute', 'Research', 'About'];
-const navItemsPath = ['', 'contribute', 'research', 'about'];
+const navItems = ['Home', 'Data Training', 'About'];
+const navItemsPath = ['', 'contribute', 'about'];
 
 
 function Navbar(props) {
